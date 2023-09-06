@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="text"],input[type="tel"],input[type="email"]{
+    @apply w-full border my-2 px-3 py-2 rounded-lg;
+}
+
+button{
+    @apply bg-gray-300 w-full;
+}
+
+button.primary{
+    background-color: #F5385D;
+    @apply bg-primary p-2 w-full;
+} 
+button.hover_color{
+    background-color: #FF6283;
+    @apply bg-hover_color p-2 w-full;
+}
+
+.button-click-effect:active {
+    background-color: #552c2e; /* Change this to the desired click color */
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+  }
+  
+  /* Add styles for the hover effect */
+  .button-hover-effect:hover {
+    background-color: #F5385D; /* Change this to the desired hover color */
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+  }
+
+
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
